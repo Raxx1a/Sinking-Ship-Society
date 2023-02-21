@@ -1,0 +1,76 @@
+
+body{
+
+    background-color: lightgray;
+}
+
+header{
+
+    background-color: purple;
+    border: 10px 10px;  
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+h1{
+    font-size: 36pt;
+}
+
+h3{
+    font-size: 24pt;
+}
+
+p{
+    font-size: 14pt;
+}
+
+main{
+    border: 2.5px solid purple;
+    background-color: white
+    
+}
+
+aside{
+    border: 2.5px solid purple;
+    background-color: gray;
+    margin: 250px;
+}
+
+footer{
+    
+    background-color: purple;
+}
+
+nav li{
+    border: 2.5px black;
+    background-color: purple;
+    list-style-type: none;
+
+}
+
+nav li a{
+    color: white;
+    text-align: center;
+    text-decoration: none ;
+}
+
+nav li :hover{
+    background-color: blue;
+
+
+}
+
+.active{
+    background-color: lightskyblue;
+}
+
+/* #test{
+    border: 2px black;
+    background-color: purple;
+    list-style-type: none;
+
+} */
