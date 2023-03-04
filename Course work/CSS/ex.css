@@ -1,26 +1,13 @@
-
 body{
 
     background-color: lightgray;
 }
 
 header{
+
     background-color: purple;
     border: 10px 10px;  
-    
-    padding: 10px;
-}
-
-#logo{
-    max-width: 50px;
-    max-height: 50px;
-    float: left;
-    margin-right: 10px;
-}
-
-#title {
-    display: inline;
-    color: white;
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -33,15 +20,15 @@ h1{
 }
 
 h3{
-    font-size: 24pt;
+    font-size: 36pt;
 }
 
 p{
-    font-size: 14pt;
+    font-size: 36pt;
 }
 
-main{
-    border: 2.5px solid purple;
+main,aside,header{
+    border: 2.5px solid blue;
     background-color: white
     
 }
@@ -58,14 +45,9 @@ footer{
 }
 
 nav li{
-    border: 2px solid white;
+    border: 2.5px black;
     background-color: purple;
     list-style-type: none;
-
-    float: left;
-    width: 12.5%;
-    padding: 16px;
-    position: sticky;
 
 }
 
@@ -73,19 +55,12 @@ nav li a{
     color: white;
     text-align: center;
     text-decoration: none ;
-
 }
 
 nav li :hover{
-    background-color:black;
+    background-color: blue;
 
 
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
 .active{
