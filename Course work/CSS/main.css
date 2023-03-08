@@ -116,3 +116,15 @@ table th{
     background-color: purple;
     color: white;
 }
+
+fieldset{
+    width: auto;
+}
+
+#left-col{
+    float: left;
+}
+
+#Right-col{
+    float:right;
+}
