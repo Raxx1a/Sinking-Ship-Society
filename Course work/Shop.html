@@ -14,7 +14,7 @@
     <link rel='stylesheet' href='CSS/main.css'>
     <link rel='stylesheet' href='CSS/Shop.css'>
 
-   
+
 </head>
 
 <body>
@@ -38,12 +38,9 @@
                 <li><a href="current_members.html">Current Members</a></li>
                 <li><a href="contact_us.html">Get in Touch</a></li>
                 <li class="active"><a href="Shop.html">Shop</a></li>
+                <li><a href="Music.html">Music</a></li>
             </ul>
         </nav>
-
-        <div>
-            <p>Shop Coming Soon</p>
-        </div>
 
         <div id="Shop-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -80,34 +77,35 @@
                     </div>
                 </div>
 
+                <button class="carousel-control-prev" type="button" data-bs-target="#Shop-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#Shop-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
 
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#Shop-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#Shop-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+        
+            
 
 
             <!-- Shop Floor -->
             <div class="album py-5 bg-light">
                 <div class="container">
-
+                    <!--Shop Item 1 -->
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <div class="col">
                             <div class="card shadow-sm">
                                 <img class="itm" src="Images/Shop_items/bp.jpg" alt="Black Puding">
-                                
+
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <h4 class="card-text">Black Pudding</h4><br>
+                                    <h6 class="card-text">People here will pay too much money for it</h6><br>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"  onclick="Shop_alert()">Add to Cart</button>
                                         </div>
                                         <small class="text-muted">£10.50</small>
                                     </div>
@@ -115,36 +113,38 @@
                             </div>
                         </div>
 
+                        <!--Shop Item 2 -->
                         <div class="col">
                             <div class="card shadow-sm">
                                 <img class="itm" src="Images/Shop_items/har_gin.jpg" alt="">
-                              
+
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <h4 class="card-text">Harris Gin</h4><br>
+                                    <h6 class="card-text">Its over priced but you get to keep the bottle</h6><br>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"  onclick="Shop_alert()">Add to Cart</button>
                                         </div>
-                                        <small class="text-muted">9 mins</small>
+                                        <small class="text-muted">£50.90</small>
                                     </div>
                                 </div>
                             </div>
-                            
-                        </div><div class="col">
+
+                        </div>
+                        
+                        <!--Shop Item 3-->
+                        <div class="col">
                             <div class="card shadow-sm">
                                 <img class="itm" src="Images/Shop_items/tickets.jpg" alt="">
 
                                 <div class="card-body">
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <h4 class="card-text">Ferry Tickets</h4><br>
+                                    <h6 class="card-text">There not for the Outer Hebrides lol</h6><br>
                                     <div class="d-flex justify-content-between align-items-center">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                            <button type="button" class="btn btn-sm btn-outline-secondary"  onclick="Shop_alert()">Add to Cart</button>
                                         </div>
-                                        <small class="text-muted">9 mins</small>
+                                        <small class="text-muted">£999</small>
                                     </div>
                                 </div>
                             </div>
@@ -153,7 +153,7 @@
                 </div>
 
 
-            </div>    
+            </div>
 
 
 
@@ -163,5 +163,11 @@
         <p>Cpoyright John Michael Maciver</p>
     </footer>
 </body>
+
+<script>
+    function Shop_alert(){
+        alert("Sorry the shop is not finished yet!")
+    }
+</script>
 
 </html>
