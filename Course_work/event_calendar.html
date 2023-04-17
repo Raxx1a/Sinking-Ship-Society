@@ -1,0 +1,244 @@
+<html>
+
+<head>
+    <title>
+        Sinking Ship Society
+    </title>
+    
+
+    <!-- link style sheets/ scripts and bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel='stylesheet' href='CSS/main.css'>
+    <link rel="stylesheet" href="Css/event_calendar.css">
+</head>
+
+<body>
+    <header>
+        <!-- logo -->
+        <img id=logo src="Images/ship.png">
+        <h1 id="title">
+            Sinking Ship Society
+        </h1>
+
+    </header>
+    <nav></nav>
+
+    <main>
+        <div>
+
+        </div>
+        <!-- Navbar  -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="img_gallery.html">Gallery</a> </li>
+                <li class="active"><a href="event_calendar.html">Calender</a></li>
+                <li><a href="current_members.html">Current Members</a> </li>
+                <li><a href="contact_us.html">Get in Touch</a> </li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Music.html">Music</a></li>
+                <li><a href="Scones.html">Scones</a></li>
+            </ul>
+        </nav>
+
+        <!-- Event Table -->
+        <table>
+            <tr>
+                <td></td>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+
+
+            <tr>
+                <th>W1</th>
+                <td>Welcome Back Meeting</td>
+                <td></td>
+                <td>How to Adjust to City Life</td>
+                <td></td>
+                <td></td>
+                <td>Curry Night</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>W2</th>
+                <td></td>
+                <td></td>
+                <td>Gossip Circle</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>W3</th>
+                <td></td>
+                <td></td>
+                <td>Gossip Circle</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>W4</th>
+                <td></td>
+                <td></td>
+                <td>Gossip Circle</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>W5</th>
+                <td></td>
+                <td></td>
+                <td>Gossip Circle</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>W6</th>
+                <td></td>
+                <td></td>
+                <td>Gossip Circle</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>W8</th>
+                <td></td>
+                <td></td>
+                <td>Gossip Circle</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>W9</th>
+                <td></td>
+                <td></td>
+                <td>Gossip Circle</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>W10</th>
+                <td>Break for Exams</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>W11</th>
+                <td>Break for Exams</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>W12</th>
+                <td></td>
+                <td></td>
+                <td>Gossip Circle</td>
+                <td></td>
+                <td>End of Year Cèilidh</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <p>
+            Want to recommend an event?
+            Tell us below!
+        </p>
+
+        <!-- event form -->
+        <form name="event">
+
+            <label for="event_name">Event:</label>
+            <input type="text" name="event_title"> <br><br>
+
+            <label for="date">Event Date:</label>
+            <input type="Date" name="event_date">
+
+            <br><br>
+
+            <button type="button" onclick = submit_event()>SubmitEvent</button>
+
+
+
+
+        </form>
+
+
+
+
+    </main>
+
+    <aside></aside>
+
+    <footer>
+        <p>Cpoyright John Michael Maciver</p>
+    </footer>
+
+</body>
+
+<script>
+    // input validation for forms
+    function submit_event() {
+       let title = document.forms["event"]["event_date"].value;
+       let date = document.forms["event"]["event_date"].value;
+
+        if (title == "") {
+            alert("An event must have a title!");
+        }
+
+        else {
+            if (date.length == 0) {
+                alert("An event must have a date!");
+            }
+            else {
+                alert("Event submitted! The society will contact you soon!");
+            }
+        }
+    }
+</script>
+
+</html>

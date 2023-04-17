@@ -1,0 +1,173 @@
+<html>
+    <!-- Threat Model
+    Threat Source: External
+    Threat Agent: Human
+    Threat Intention: Intentional
+    Threat Motivation: Embarrassment of the society
+    Threat Impact: Changing of images and captions
+    Threat Mitigation: 2FA and login validation before images can be changed-->
+<head>
+    <title>
+        Sinking Ship Society
+    </title>
+    <!-- link style sheets/ scripts and bootstrap -->
+    
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel='stylesheet' href='CSS/main.css'>
+   <link rel="stylesheet" href="CSS/img_gallery.css"> 
+      
+</head>
+
+<body>
+    <header>
+        <!-- logo -->
+        <img id=logo src="Images/ship.png">
+        <h1 id="title">
+            Sinking Ship Society
+        </h1>
+
+    </header>
+
+    <main>
+        <!-- Navbar  -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a>
+                <li class="active"><a href="img_gallery.html">Gallery</a></li>
+                <li><a href="event_calendar.html">Calender</a></li>
+                <li><a href="current_members.html">Current Members</a></li>
+                <li><a href="contact_us.html">Get in Touch</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li><a href="Music.html">Music</a></li>
+                <li><a href="Scones.html">Scones</a></li>
+            </ul>
+        </nav>
+
+        <!-- Img galery table -->
+        <div id="img-gallery" class="container">
+
+            <div class="row">
+
+                <div class="col-sm">
+                    <img src="Images/Ferry_LS.jpeg" alt="Cal Mac Loch seaforth" class="gallery-img" id="img_active1">
+                    <figcaption>The Lcoh Seaforth</figcaption>
+                </div>
+
+                <div class="col-sm">
+                    <img src="Images/Sheep.jpg " alt="Sheep" class="gallery-img" id="img_active2">
+                    <figcaption>It's a Sheep</figcaption>
+                </div>
+
+                <div class="col-sm">
+                    <img src="Images/Slowworm.webp" alt="Local whild life " class="gallery-img" id="img_active3">
+                    <figcaption>A lizzard with no legs</figcaption>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm">
+                    <img src="Images/highland-cow.webp" alt="Highland cow" class="gallery-img" id="img_active4">
+                    <figcaption>Cow</figcaption>
+                </div>
+
+                <div class="col-sm">
+                    <img src="Images/Calanais_Standing_Stones.jpg" alt="Stones" class="gallery-img" id="img_active5">
+                    <figcaption>The Calanais Stones</figcaption>
+                </div>
+
+                <div class="col-sm">
+                    <img src="Images/whale bone .jpg" alt="Whale Bone Arch " class="gallery-img" id="img_active6">
+                    <figcaption>The Whale Bone Arch</figcaption>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm">
+                    <img src="Images/dal mor.jpg" alt="Dal Mor" class="gallery-img" id="img_active7">
+                    <figcaption>Dal Mor beach</figcaption>
+                </div>
+
+                <div class="col-sm">
+                    <img src="Images/an latner.jpg " alt="An latner" class="gallery-img" id="img_active8">
+                    <figcaption>An latner</figcaption>
+                </div>
+
+                <div class="col-sm">
+                    <img src="Images/castle.jpg" alt="castle " class="gallery-img" id="img_active9">
+                    <figcaption>Lewis Castle</figcaption>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <aside></aside>
+
+    <footer>
+        <p>Cpoyright John Michael Maciver</p>
+    </footer>
+
+</body>
+
+<script>
+    //img1
+    document.getElementById("img_active1").addEventListener("mouseover", highlight_event);
+    document.getElementById("img_active1").addEventListener("mouseout", delight_event);
+    // img2 
+    document.getElementById("img_active2").addEventListener("mouseover", highlight_event);
+    document.getElementById("img_active2").addEventListener("mouseout", delight_event);
+    //img3
+    document.getElementById("img_active3").addEventListener("mouseover", highlight_event);
+    document.getElementById("img_active3").addEventListener("mouseout", delight_event);
+    //img4
+    document.getElementById("img_active4").addEventListener("mouseover", highlight_event);
+    document.getElementById("img_active4").addEventListener("mouseout", delight_event);
+    //img5
+    document.getElementById("img_active5").addEventListener("mouseover", highlight_event);
+    document.getElementById("img_active5").addEventListener("mouseout", delight_event);
+    //img6
+    document.getElementById("img_active6").addEventListener("mouseover", highlight_event);
+    document.getElementById("img_active6").addEventListener("mouseout", delight_event);
+    //img7
+    document.getElementById("img_active7").addEventListener("mouseover", highlight_event);
+    document.getElementById("img_active7").addEventListener("mouseout", delight_event);
+    //img8
+    document.getElementById("img_active8").addEventListener("mouseover", highlight_event);
+    document.getElementById("img_active8").addEventListener("mouseout", delight_event);
+    //img9
+    document.getElementById("img_active9").addEventListener("mouseover", highlight_event);
+    document.getElementById("img_active9").addEventListener("mouseout", delight_event);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+
+
+    //Functions to higlite each image 
+    function highlight_event(event) {
+        event.target.style = "border: solid blue 2px;"
+
+    }
+
+    function delight_event(event) {
+        event.target.style = "border: none"
+    }
+
+
+
+
+</script>
+
+</html>
